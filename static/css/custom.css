@@ -5,11 +5,11 @@ height: 100%;
 }
 
 body {
-font-family: "Times New Roman", Times, serif;
+font-family: "Times New Roman", Times, Sans-serif	;
 }
 
 #about p{
-font-family: "Times New Roman", Times, serif;
+font-family: "Times New Roman", Times, Sans-serif	;
 text-align: justify;
 }
 
