@@ -18,6 +18,7 @@ urlpatterns = [
     url(r'^teams/trident$', 'website.views.trident', name='trident'),
     url(r'^teams/vocowa$', 'website.views.vocowa', name='vocowa'),
     url(r'^teams/auv$', 'website.views.auv', name='auv'),
+    url(r'^clubs/others$', 'website.views.team', name='team'),
     url(r'^app/$', 'website.views.app', name='app'),
     url(r'^admin/', include(admin.site.urls)),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

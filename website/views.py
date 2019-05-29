@@ -37,5 +37,8 @@ def auv(request):
 def cef(request):
 	return render(request, 'cef.html', {})
 
+def team(request):
+	return render(request, 'team.html', {})
+
 def app(request):
 	return HttpResponseRedirect("https://play.google.com/store/apps/details?id=in.shriyansh.questify&hl=en")
