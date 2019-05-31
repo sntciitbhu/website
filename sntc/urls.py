@@ -15,10 +15,11 @@ urlpatterns = [
     url(r'^clubs/robotics$', 'website.views.robotics', name='robotics'),
     url(r'^clubs/sae$', 'website.views.sae', name='sae'),
     url(r'^clubs/cef$', 'website.views.cef', name='cef'),
+    url(r'^others/team$', 'website.views.team', name='team'),
     url(r'^teams/trident$', 'website.views.trident', name='trident'),
     url(r'^teams/vocowa$', 'website.views.vocowa', name='vocowa'),
     url(r'^teams/auv$', 'website.views.auv', name='auv'),
-    url(r'^clubs/others$', 'website.views.team', name='team'),
+    url(r'^others/team', 'website.views.team', name='team'),
     url(r'^app/$', 'website.views.app', name='app'),
     url(r'^admin/', include(admin.site.urls)),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
