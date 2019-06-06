@@ -13,8 +13,8 @@ def astro(request):
 def cops(request):
 	return render(request, 'cops.html', {})
 
-def green(request):
-	return render(request, 'green.html', {})
+def csi(request):
+	return render(request, 'csi.html', {})
 
 def troc(request):
 	return render(request, 'troc.html', {})
@@ -34,8 +34,8 @@ def vocowa(request):
 def auv(request):
 	return render(request, 'auv.html', {})
 
-def cef(request):
-	return render(request, 'cef.html', {})
+def biz(request):
+	return render(request, 'biz.html', {})
 
 def team(request):
 	return render(request, 'team.html', {})
