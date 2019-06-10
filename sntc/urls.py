@@ -14,6 +14,7 @@ urlpatterns = [
     url(r'^clubs/robotics$', 'website.views.robotics', name='robotics'),
     url(r'^clubs/sae$', 'website.views.sae', name='sae'),
     url(r'^clubs/biz$', 'website.views.biz', name='biz'),
+    url(r'^clubs/inventory$', 'website.views.inventory', name='inventory'),
     url(r'^others/team$', 'website.views.team', name='team'),
     url(r'^teams/trident$', 'website.views.trident', name='trident'),
     url(r'^teams/vocowa$', 'website.views.vocowa', name='vocowa'),
