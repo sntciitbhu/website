@@ -17,7 +17,7 @@ $(function() {
     })
 
 $("header").bgswitcher({
-  images: ["/static/clubs/green/img/header.jpg", "/static/clubs/green/img/header2.jpg", "/static/clubs/green/img/header4.jpg", "/static/clubs/green/img/header6.jpg"],
+  images: ["/static/clubs/csi/img/header.jpg", "/static/clubs/csi/img/header2.jpg", "/static/clubs/csi/img/header4.jpg", "/static/clubs/csi/img/header6.jpg"],
   effect: "fade",
   interval: 4000,
   duration: 1000
