@@ -5,11 +5,11 @@ height: 100%;
 }
 
 body {
-font-family: "Times New Roman", Times, Sans-serif	;
+font-family: "Open Sans", sans-serif	;
 }
 
 #about p{
-font-family: "Times New Roman", Times, Sans-serif	;
+font-family: "Open Sans", sans-serif	;
 text-align: justify;
 }
 
@@ -68,10 +68,14 @@ color: #4972AE;
 h1,
 h2,
 h3,
-h4,
+h4{
+font-family: "Open Sans",  sans-serif	;
+font-size: 30px;
+font-style: bold;
+},
 h5,
 h6 {
-font-family: "Times New Roman", Times, serif;
+font-family: "Open Sans",  sans-serif	;
 font-size: 20px;
 font-style: bold;
 }
@@ -126,7 +130,7 @@ transition: all .35s;
 }
 
 .navbar-default .navbar-header .navbar-brand {
-font-family: "Times New Roman", Times, serif;
+font-family: "Open Sans",  sans-serif	;
 letter-spacing: 1px;
 font-weight: 700;
 color: #8E1B1B;
@@ -537,7 +541,7 @@ background-color: #fff;
 .btn {
 border: 0;
 border-radius: 300px;
-font-family: "Times New Roman", Times, serif;
+font-family: "Open Sans",  sans-serif	;
 font-size: 24px;
 }
 
@@ -560,7 +564,7 @@ padding: 15px 30px;
   }
 
   .navbar-default .navbar-header .navbar-brand {
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Open Sans",  sans-serif	;
   letter-spacing: 1px;
   font-weight: 500;
   color: #8E1B1B;
