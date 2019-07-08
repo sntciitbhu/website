@@ -31,5 +31,8 @@ def team(request):
 def inventory(request):
         return render(request, 'inventory.html', {})
 
+def inventory(request):
+        return render(request, 'tac.html', {})
+
 def app(request):
 	return HttpResponseRedirect("https://play.google.com/store/apps/details?id=in.shriyansh.questify&hl=en")
