@@ -678,3 +678,7 @@ color: #8E1B1B;
 padding-right: 0;
 padding-left: 0;
 }
+
+#mailcolor {
+  color: white!important;
+}
