@@ -17,12 +17,11 @@ $(function() {
     })
 
 $("header").bgswitcher({
-  images: ["/static/clubs/csi/img/header.jpg", "/static/clubs/csi/img/header2.jpg", "/static/clubs/csi/img/header3.jpg" "/static/clubs/csi/img/header4.jpg", "/static/clubs/csi/img/header5.jpg" "/static/clubs/csi/img/header6.jpg"],
+  images: ["/static/clubs/csi/img/header.jpg", "/static/clubs/csi/img/header2.jpg", "/static/clubs/csi/img/header3.jpg", "/static/clubs/csi/img/header4.jpg", "/static/clubs/csi/img/header5.jpg", "/static/clubs/csi/img/header6.jpg"],
   effect: "fade",
   interval: 4000,
   duration: 1000
 });
-
 $('#clubs').hover(function() {
   $(this).find('.dropdown-menu').first().stop(true, true).delay(100).slideDown();
 }, function() {
