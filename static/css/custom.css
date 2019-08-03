@@ -611,3 +611,17 @@ padding: 15px 30px;
   text-align: center;
   margin-top: 10px;
 }
+
+.iit-gate{
+height: 60px;
+width: auto;
+margin-bottom: 10px;
+position: center;
+margin-left: 22%;
+}
+
+@media(max-width: 767px){
+.iit-gate-position{
+
+}
+}

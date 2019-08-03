@@ -455,11 +455,7 @@ height: 60px;
 width: auto;
 }
 
-@media(max-width: 767px){
-.iit-gate-position{
-display: none;
-}
-}
+
 
 @media(min-width: 768px){
 .iit-gate-position{
@@ -691,4 +687,28 @@ h5 {
   .section-heading {
     font-size: 17px!important;
   }
+}
+
+.footer-company-name{
+  background-color: #8E1B1B;
+  color: white!important;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.iit-gate{
+height: 60px;
+width: auto;
+margin-bottom: 10px;
+position: center;
+margin-left: 22%;
+}
+
+@media(max-width: 767px){
+.iit-gate-position{
+
+}
 }
