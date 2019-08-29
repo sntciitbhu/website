@@ -34,7 +34,7 @@ def inventory(request):
 def inventory(request):
         return render(request, 'tac.html', {})
 
-def inventory(request):
+def learning(request):
         return render(request, 'learning.html', {})
 
 def app(request):
