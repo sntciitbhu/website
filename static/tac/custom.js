@@ -17,7 +17,7 @@ $(function() {
     })
 
 $("header").bgswitcher({
-  images: ["/static/others/tac/img/header.jpg", "/static/others/tac/img/header2.jpg", "/static/others/tac/img/header3.jpg", "/static/others/tac/img/header4.jpg", "/static/others/tac/img/header5.jpg", "/static/others/tac/img/header6.jpg"],
+  images: ["/static/tac/img/header.jpg", "/static/tac/img/header2.jpg", "/static/tac/img/header3.jpg", "/static/tac/img/header4.jpg", "/static/tac/img/header5.jpg", "/static/tac/img/header6.jpg"],
   effect: "fade",
   interval: 4000,
   duration: 1000
