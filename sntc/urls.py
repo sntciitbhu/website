@@ -17,8 +17,8 @@ urlpatterns = [
     url(r'^clubs/inventory$', 'website.views.inventory', name='inventory'),
     url(r'^tac$', 'website.views.inventory', name='tac'),
     url(r'^others/bigbook$', 'website.views.inventory', name='bigbook'),
-    url(r'^others/team$', 'website.views.team', name='team'),
-    url(r'^others/learning$', 'website.views.learning', name='learning'),
+    url(r'^team$', 'website.views.team', name='team'),
+    url(r'^learning$', 'website.views.learning', name='learning'),
     url(r'^app/$', 'website.views.app', name='app'),
     url(r'^admin/', include(admin.site.urls)),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
