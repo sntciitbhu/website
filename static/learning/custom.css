@@ -6,7 +6,9 @@ height: 100%;
 
 body {
 font-family: 'Open Sans', sans-serif;
+    padding-top: 70px;
 }
+
 
 #about p{
 font-family: 'Open Sans', sans-serif;
@@ -248,7 +250,9 @@ transform: translateY(-50%);
 .section-heading {
 margin-top: 0;
 }
-
+.holds-the-iframe {
+  background:url(../img/loading.gif) center center no-repeat;
+}
 .service-box {
 margin: 50px auto 0;
 max-width: 400px;
