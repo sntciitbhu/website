@@ -431,7 +431,9 @@
                                     // The ID token you need to pass to your backend:
                                     var id_token = googleUser.getAuthResponse().id_token;
                                     console.log("ID Token: " + id_token);
+                                    window.alert(profile.getId());
                                     var req_url = "https://script.google.com/macros/s/AKfycbwiI9Sfj8d8sUFetQN6LwTiEzryrJ8ZSDRWWfVyqmXTQhkIP6k/exec?task=generate&id="+profile.getId();
+                                    
                                     document.getElementById("details").src = req_url;
                                 }
                             </script>
@@ -463,7 +465,7 @@
                             window.alert(id);
                             if(id.length==12)
                                 {
-                                    var url1="https://www.sntciitbhu.co.in/verfication?"+id;
+                                    var url1="https://www.sntciitbhu.co.in/verification?"+id;
                                     window.open(url1,'_blank')
                                 }
                             }
