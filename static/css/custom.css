@@ -258,6 +258,10 @@ opacity: 0.6;
 margin-top: 0;
 }
 
+.holds-the-iframe {
+  background:url(../img/wait.jpg) center center no-repeat;
+}
+
 .service-box {
 margin: 50px auto 0;
 max-width: 400px;
