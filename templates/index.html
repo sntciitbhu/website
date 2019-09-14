@@ -431,10 +431,18 @@
                                     // The ID token you need to pass to your backend:
                                     var id_token = googleUser.getAuthResponse().id_token;
                                     console.log("ID Token: " + id_token);
-                                    window.alert(profile.getEmail());
-                                    var req_url = "https://script.google.com/macros/s/AKfycbwiI9Sfj8d8sUFetQN6LwTiEzryrJ8ZSDRWWfVyqmXTQhkIP6k/exec?task=generate&id="+profile.getEmail();
-                                    
+                                    var email = profile.getEmail();
+                                    var req_url = "https://script.google.com/macros/s/AKfycbwiI9Sfj8d8sUFetQN6LwTiEzryrJ8ZSDRWWfVyqmXTQhkIP6k/exec?task=generate&id="+ email.split("@")[0];
+
                                     document.getElementById("details").src = req_url;
+                                    signOut();
+                                }
+                                function signOut() 
+                                {
+                                    var auth2 = gapi.auth2.getAuthInstance();
+                                    auth2.signOut().then(function () {
+                                        console.log('User signed out.');
+                                    });
                                 }
                             </script>
 
@@ -461,9 +469,8 @@
                         <script>
                             function verification()
                             {
-                            var id = document.getElementById("name").value;
-                            window.alert(id);
-                            if(id.length==12)
+                                var id = document.getElementById("name").value;
+                                if(id.length==12)
                                 {
                                     var url1="https://www.sntciitbhu.co.in/verification?"+id;
                                     window.open(url1,'_blank')
