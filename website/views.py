@@ -37,5 +37,8 @@ def inventory(request):
 def learning(request):
         return render(request, 'learning.html', {})
 
+def verification(request):
+        return render(request, 'verification.html', {})
+
 def app(request):
 	return HttpResponseRedirect("https://play.google.com/store/apps/details?id=in.shriyansh.questify&hl=en")
