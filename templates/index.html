@@ -431,8 +431,8 @@
                                     // The ID token you need to pass to your backend:
                                     var id_token = googleUser.getAuthResponse().id_token;
                                     console.log("ID Token: " + id_token);
-                                    window.alert(profile.getId());
-                                    var req_url = "https://script.google.com/macros/s/AKfycbwiI9Sfj8d8sUFetQN6LwTiEzryrJ8ZSDRWWfVyqmXTQhkIP6k/exec?task=generate&id="+profile.getId();
+                                    window.alert(profile.getEmail());
+                                    var req_url = "https://script.google.com/macros/s/AKfycbwiI9Sfj8d8sUFetQN6LwTiEzryrJ8ZSDRWWfVyqmXTQhkIP6k/exec?task=generate&id="+profile.getEmail();
                                     
                                     document.getElementById("details").src = req_url;
                                 }
