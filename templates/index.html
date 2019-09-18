@@ -423,10 +423,11 @@
                             <h2 class="text-center">Sign in here to get your certificates</h2>
                             <h2 class="text-center"></h2>
 
-                            <div class="g-signin2" data-onsuccess="onSignIn" data-theme="light"></div>
+                            <div class="g-signin2" data-onsuccess="onSignIn" data-theme="light">
+                            <h2 class="text-center" id="loading">Loading</h2>
+                            </div>
                             <script>
                                 function onSignIn(googleUser) {
-                                    document.getElementById("details").style.background = "url(../img/Pre_loader3.gif)"
                                     // Useful data for your client-side scripts:
                                     var profile = googleUser.getBasicProfile();
                                     // The ID token you need to pass to your backend:
@@ -442,7 +443,6 @@
                                 {
                                     var auth2 = gapi.auth2.getAuthInstance();
                                     auth2.signOut().then(function () {
-                                        console.log('User signed out.');
                                     });
                                 }
                             </script>
@@ -470,6 +470,10 @@
                         <script>
                             function verification()
                             {
+                                document.getElementById("details").style.backgroundColor = "white"
+                                document.getElementById("details").style.background = "url('static/img/loader3.gif') no-repeat center"
+
+
                                 var id = document.getElementById("name").value;
                                 if(id.length==12)
                                 {
@@ -482,8 +486,6 @@
                                 }
                             }
                         </script>
-
-
                     </div>
                 </div>
 
