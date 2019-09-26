@@ -421,9 +421,9 @@
                     <div class = "col-md-6">
                         <div class="col-md-12 text-center">
                             <h2 class="text-center">Sign in here to get your certificates</h2>
-                            <h2 class="text-center"></h2>
+                            <!-- <h2 class="text-center"></h2> -->
 
-                            <div class="g-signin2" data-onsuccess="onSignIn" data-theme="light">
+                            <div class="g-signin2" data-onsuccess="onSignIn" data-theme="light" align = "center">
                             <h2 class="text-center" id="loading">Loading</h2>
                             </div>
                             <script>
@@ -461,10 +461,10 @@
                         <div class="col-md-12 text-center">
                             <h2 class="text-center">Enter the Certificate Number here to verify or scan the QR code on your certificate</h2>
                         </div>
-                        <form >
-                            Certificate Number :
+                        <form align = "center">
+                            <b>Certificate Number :</b>
                             <input id="name" type = "text" name = "name"/>
-                            <br>
+                            <br><br>
                             <button type="button" onclick="verification()">Verify</button>
                         </form>
                         <script>
