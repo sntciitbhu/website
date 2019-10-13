@@ -595,9 +595,14 @@ padding: 15px 30px;
   background-color:#8E1B1B;
   color: white;
   cursor: pointer;
-  padding: 18px;
+  padding: 5px;
   width: 100%;
   border: 5;
+border-radius: 2px;
+    border-style:solid;
+    border-width:10px;
+    border-color:white;
+    
   text-align: center;
 font-family: 'Open Sans', sans-serif;
 letter-spacing: 1px;
@@ -605,14 +610,23 @@ font-weight: 700;
 font-size: 24px;
     
 }
- .collapsible:hover {
+ .active , .collapsible:hover {
   background-color: white;
-     color: #8E1B1B
+     color: #8E1B1B;
+     border-color:#8E1B1B;
 
 }
 
+.collapsible:active {
+      background-color: white;
+     color: #8E1B1B;
+         border-color:#8E1B1B;
+
+         border-style: none;
+}
+
 .content {
-  padding: 0 18px;
+  padding: 18px 18px;
   display: none;
   overflow: hidden;
   background-color: white;
