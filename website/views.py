@@ -28,8 +28,8 @@ def biz(request):
 def team(request):
 	return render(request, 'team.html', {})
 
-def inventory(request):
-        return render(request, 'inventory.html', {})
+def certificates(request):
+        return render(request, 'certificates.html', {})
 
 def inventory(request):
         return render(request, 'tac.html', {})
