@@ -5,8 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="google-signin-scope" content="profile email">
-        <meta name="google-signin-client_id" content="203269059770-t9dknukdg0jil5idq4gkkfb5n254h1tt.apps.googleusercontent.com">
-        <script src="https://apis.google.com/js/platform.js" async defer></script>
+    
         <meta name="description" content="Science and Technology Council, IIT (BHU) Varanasi - A place where all the innovative ideas trapped in the quagmire of pen and paper, are given shape and transformed into reality.">
         <meta name="keywords" content=" science, technology, iit bhu, sntc, iit gymkhana, innovation, technex, festival, iit, council, varanasi">
 
@@ -61,6 +60,14 @@
                         <li><a href="/tac">TAC</a></li>
                         <li><a href="/team">Team</a></li>
                         <li><a href="/learning">Learning Corner</a></li>
+                        <li class="dropdown" id="clubs">
+                            <a data-toggle="dropdown" data-target="#clubs" style="cursor:pointer;">More</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="https://drive.google.com/file/d/1DLLpKW1sx5e095RXTxixgjqXsuTwwOW7/view?usp=sharing">Annual Report 2018-19</a></li>
+                                <li><a href="https://docs.google.com/forms/d/e/1FAIpQLScI6_GEcKW-DZZ5OMFqso2-aKIUk6xzpOgsVEzcX6-r0gPung/viewform?usp=sf_link">Feedback</a></li>
+
+                            </ul>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -83,7 +90,7 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-5 text-center">
-                        <p class="text-faded">Welcome to the homepage of the Science and Technology Council, IIT (BHU) Varanasi! This is the place where all your innovative ideas, which were trapped in the quagmire of pen and paper, are given shape and transformed into reality. Our council houses a plethora of clubs, projects, technical competetion teams, research groups, which are extremely adept at their job. From making robots that battle it out amongst themselves in an arena to making racing cars, we do it all. Read on about our clubs to find out more!</p>
+                        <p class="text-faded">Welcome to the homepage of the Science and Technology Council, IIT (BHU) Varanasi! This is the place where all your innovative ideas, which were trapped in the quagmire of pen and paper, are given shape and transformed into reality. Our council houses a plethora of clubs, projects, technical competition teams, research groups, which are extremely adept at their job. From making robots that battle it out amongst themselves in an arena to making racing cars, we do it all. Read on to find out more!</p>
                     </div>
                     <div class="col-lg-7 text-center">
                         <div class="text-center">
@@ -189,7 +196,7 @@
                     <div class="col-md-4 col-md-push-1  text-center">
                         <div id="news-ticker-container">
                             <div class="upcoming-ticker-header text-center">
-                                <span><strong>Events this Year</strong></span>
+                                <span><strong>Schedule this Year</strong></span>
                             </div>
                             <ul class="news-ticker upcoming-ticker" id="upcoming-ticker">
                                 <li>
@@ -406,92 +413,7 @@
                 </div>
             </div>
         </section>
-        <section class="header" id="certificates">
-            <div class="container">
-                <div class="row ">
-                    <div class="col-md-12 text-center">
-                        <h2 class="section-heading ribbon"><span>Certificates</span></h2>
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="col-md-12 text-center">
-                    <h2 class="text-center">All the certificates for the various Teams, Projects and Events can be downloaded and verified from here </h2>
-                </div>
-                <div class="row">
-                    <div class = "col-md-6">
-                        <div class="col-md-12 text-center">
-                            <h2 class="text-center">Sign in here to get your certificates</h2>
-                            <!-- <h2 class="text-center"></h2> -->
 
-                            <div class="g-signin2" data-onsuccess="onSignIn" data-theme="light" align = "center">
-                            <h2 class="text-center" id="loading">Loading</h2>
-                            </div>
-                            <script>
-                                function onSignIn(googleUser) {
-                                    // Useful data for your client-side scripts:
-                                    var profile = googleUser.getBasicProfile();
-                                    // The ID token you need to pass to your backend:
-                                    var id_token = googleUser.getAuthResponse().id_token;
-                                    console.log("ID Token: " + id_token);
-                                    var email = profile.getEmail();
-                                    var req_url = "https://script.google.com/macros/s/AKfycbwiI9Sfj8d8sUFetQN6LwTiEzryrJ8ZSDRWWfVyqmXTQhkIP6k/exec?task=generate&id="+ email.split("@")[0];
-
-                                    document.getElementById("details").src = req_url;
-                                    signOut();
-                                }
-                                function signOut() 
-                                {
-                                    var auth2 = gapi.auth2.getAuthInstance();
-                                    auth2.signOut().then(function () {
-                                    });
-                                }
-                            </script>
-
-                            <div class="row">
-                                <h2 class="text-center"></h2>
-
-                                <div class="col-lg-10 col-lg-offset-1 text-center">
-                                    <div class="holds-the-iframe"><iframe id ="details" width=100% height= "150px" ></iframe></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class = "col-md-6">
-                        <div class="col-md-12 text-center">
-                            <h2 class="text-center">Enter the Certificate Number here to verify or scan the QR code on your certificate</h2>
-                        </div>
-                        <form align = "center">
-                            <b>Certificate Number :</b>
-                            <input id="name" type = "text" name = "name"/>
-                            <br><br>
-                            <button type="button" onclick="verification()">Verify</button>
-                        </form>
-                        <script>
-                            function verification()
-                            {
-                                document.getElementById("details").style.backgroundColor = "white"
-                                document.getElementById("details").style.background = "url('static/img/loader3.gif') no-repeat center"
-
-
-                                var id = document.getElementById("name").value;
-                                if(id.length==12)
-                                {
-                                    var url1="https://www.sntciitbhu.co.in/verification?"+id;
-                                    window.open(url1,'_blank')
-                                }
-                                else
-                                {
-                                    window.alert("Certificate Number should be 12 digit");
-                                }
-                            }
-                        </script>
-                    </div>
-                </div>
-
-            </div>
-        </section>
 
 
 

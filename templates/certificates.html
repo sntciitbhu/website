@@ -6,7 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="google-signin-scope" content="profile email">
         <meta name="google-signin-client_id" content="203269059770-t9dknukdg0jil5idq4gkkfb5n254h1tt.apps.googleusercontent.com">
-        <script src="https://apis.google.com/js/platform.js" async defer></script>
+        <script src="https://apis.google.com/js/platform.js" async defer
+                >
+        </script>
         <meta name="description" content="Science and Technology Council, IIT (BHU) Varanasi - A place where all the innovative ideas trapped in the quagmire of pen and paper, are given shape and transformed into reality.">
         <meta name="keywords" content=" science, technology, iit bhu, sntc, iit gymkhana, innovation, technex, festival, iit, council, varanasi">
 
@@ -123,6 +125,7 @@
                             </div>
                             <script>
                                 function onSignIn(googleUser) {
+                                    document.getElementById("details").style.display = "block"; //shows the frame>
                                     // Useful data for your client-side scripts:
                                     var profile = googleUser.getBasicProfile();
                                     // The ID token you need to pass to your backend:
@@ -143,10 +146,11 @@
                             </script>
 
                             <div class="row">
-                                <h2 class="text-center"></h2>
+                                <h2 class="text-center" ></h2>
 
-                                <div class="col-lg-10 col-lg-offset-1 text-center">
-                                    <div class="holds-the-iframe"><iframe id ="details" width=100% height="600" scrolling= "no" frameBorder="0" ></iframe></div>
+                                <div class="col-lg-10 col-lg-offset-1 text-center" >
+                                    <div class="holds-the-iframe"><iframe id ="details" width=100% height="600" frameBorder="0" ></iframe></div>
+                                    <script>document.getElementById("details").style.display = "none";</script>
                                 </div>
                             </div>
                         </div>
@@ -172,8 +176,6 @@
                         <script>
                             function verification()
                             {
-                                document.getElementById("details").style.backgroundColor = "white"
-                                document.getElementById("details").style.background = "url('static/img/loader3.gif') no-repeat center"
 
 
                                 var id = document.getElementById("name").value;
