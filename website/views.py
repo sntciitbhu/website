@@ -37,6 +37,9 @@ def inventory(request):
 def learning(request):
         return render(request, 'learning.html', {})
 
+def udaan(request):
+        return render(request, 'udaan.html', {})
+
 def verification(request):
         return render(request, 'verification.html', {})
 
