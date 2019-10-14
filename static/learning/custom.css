@@ -79,7 +79,7 @@ font-size: 32px;
 
 .normal-font{
 font-family: 'arial';
-font-size: 20px;
+font-size: 15px;
 letter-spacing: 0px;
 }
 
@@ -563,6 +563,19 @@ padding: 15px 30px;
     padding-left: 15px;
     padding-right: 15px;
     font-size: 30px;
+  }
+    h2-blog{
+    font-size: 50px;
+  }
+
+  p {
+  margin-bottom: 20px;
+  font-size: 20px;
+  line-height: 1.5;
+  }
+
+  h4{
+    font-size: 16px;
   }
 
   h2{

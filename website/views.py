@@ -40,5 +40,8 @@ def learning(request):
 def verification(request):
         return render(request, 'verification.html', {})
 
+def blog(request):
+        return render(request, 'blog.html', {})
+
 def app(request):
 	return HttpResponseRedirect("https://play.google.com/store/apps/details?id=in.shriyansh.questify&hl=en")
