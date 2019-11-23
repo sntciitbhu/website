@@ -46,5 +46,8 @@ def verification(request):
 def blog(request):
         return render(request, 'blog.html', {})
 
+def wintercamp(request):
+	return HttpResponseRedirect("https://drive.google.com/open?id=1HfBjfnGlVvKXDG7ywCgv-np43xziRaj8")
+
 def app(request):
 	return HttpResponseRedirect("https://play.google.com/store/apps/details?id=in.shriyansh.questify&hl=en")

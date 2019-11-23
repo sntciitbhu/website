@@ -22,6 +22,7 @@ urlpatterns = [
     url(r'^verification$', 'website.views.verification', name='verification'),
     url(r'^blog$', 'website.views.blog', name='blog'),
     url(r'^udaan$', 'website.views.udaan', name='udaan'),
+    url(r'^wintercamp$', 'website.views.wintercamp', name='wintercamp'),
     url(r'^app/$', 'website.views.app', name='app'),
     url(r'^admin/', include(admin.site.urls)),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
